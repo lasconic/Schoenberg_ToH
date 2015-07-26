@@ -1,0 +1,1 @@
+Quick and dirty hack to show how a music theory book could be digitised and enhanced.
