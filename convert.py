@@ -2,7 +2,7 @@ import os
 from os.path import basename
 from subprocess import call
 
-process = True
+process = False
 
 mscoreexe="/Applications/MuseScore 2.app/Contents/MacOS/mscore"
 
@@ -25,13 +25,16 @@ for file in os.listdir("mscz"):
             call([mscoreexe, filepath, "-o", "sound/"+ filename +".mp3" ])
             # no ogg for the moment
             #call([mscoreexe, filepath, "-o", "sound/"+ filename +".ogg" ])
-        outfile.write('<h4>Example '+ str(int(filename)) +'</h4>\n')
-        outfile.write('    <p>\n')
-        outfile.write('        <audio preload="none" controls="controls">\n'
-#'           <source src="sound/'+ filename +'.ogg" />\n'
-'           <source src="sound/'+ filename +'.mp3" />\n'
-'           Your browser does not support the audio tag.'
-'        </audio> \n')
+        shortFilename = str(int(filename)) 
+        outfile.write('<h4 id="ex' + shortFilename + '">Example '+ shortFilename +'\n')
+        outfile.write('     <a class="toc-anchor" href="#ex' + shortFilename + '">#</a>')
+        outfile.write('</h4>\n')
+        outfile.write('<p>\n')
+        outfile.write('     <audio preload="none" controls="controls">\n'
+        #'           <source src="sound/'+ filename +'.ogg" />\n'
+        '           <source src="sound/'+ filename +'.mp3" />\n'
+        '           Your browser does not support the audio tag.'
+        '        </audio> \n')
         for png in os.listdir("images/"):
             if png.startswith(filename + "-") and png.endswith(".png"):
                 outfile.write('        <figure>\n'
