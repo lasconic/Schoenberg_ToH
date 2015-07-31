@@ -1,1 +1,1 @@
-Quick and dirty hack to show how a music theory book could be digitised and enhanced.
+Schoenberg - Theory of Harmony. See https://musescore.org/en/node/35296

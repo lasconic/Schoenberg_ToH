@@ -1,8 +1,10 @@
 import os
-from os.path import basename
-from subprocess import call
+from os.path import basename, getmtime
 
-process = False
+from subprocess import call
+import shutil
+
+process = True
 
 mscoreexe="/Applications/MuseScore 2.app/Contents/MacOS/mscore"
 
@@ -20,7 +22,7 @@ for file in os.listdir("mscz"):
         print "Processing %s file..." % file
         filepath = "mscz/" + file
         filename = os.path.splitext(file)[0]
-        if (process):
+        if process and getmtime(filepath) > getmtime("sound/"+ filename +".mp3"):
             call([mscoreexe, filepath, "-o", "images/"+ filename +".png", "-T", "10", "-r", "72" ])
             call([mscoreexe, filepath, "-o", "sound/"+ filename +".mp3" ])
             # no ogg for the moment
@@ -43,7 +45,25 @@ for file in os.listdir("mscz"):
         '        </figure>\n')
 
         outfile.write('    </p>\n')
+    elif file.endswith(".png"):
+        print "Processing %s file..." % file
+        filepath = "mscz/" + file
+        filename = os.path.splitext(file)[0]
+        shortFilename = str(int(filename))
+        dst = "images/"+ filename +"-1.png"
+        shutil.copy2(filepath, dst)
+        outfile.write('<h4 id="ex' + shortFilename + '">Example '+ shortFilename +'\n')
+        outfile.write('     <a class="toc-anchor" href="#ex' + shortFilename + '">#</a>')
+        outfile.write('</h4>\n')
+        outfile.write('<p>\n')
+        for png in os.listdir("images/"):
+            if png.startswith(filename + "-") and png.endswith(".png"):
+                outfile.write('        <figure>\n'
+        '          <img src="images/'+ png +'">\n'
+        '          <figcaption></figcaption>\n'
+        '        </figure>\n')
 
+        outfile.write('    </p>\n')
 
 outfile.write('</body>\n'
 '</html>')

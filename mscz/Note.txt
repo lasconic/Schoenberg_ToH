@@ -1,0 +1,58 @@
+Notation:
+1—99	Joe H
+100—205	Henjor (also renotated 018, 229, 231, 234, 239—41, 247, 254—8, 260—1, 263, 267, 270, 273)
+206—73	Joe H
+274—347	Henjor
+Functional analysis was notated by Joe H (by Henjor in his parts only sporadically where possible to notate in full a complete example using Lyric), shifts partly from using Lyric to Figured bass between #40/i and k.
+
+Time signatures shown: 
+#142 a)	[3/4]
+#266	[C]
+#284 d)	[3/4]
+
+Unison note ‘eclipse’ implied by voice leading:
+#109 e) T/B eclipse
+#136/a I.3 measure 5 T/B eclipse
+#136/a I.5 measure 1 T/B eclipse
+#136/a I.6 measure 1 T/B eclipse
+#136/a I.6 measure 3 A/T eclipse
+#136/a I.7 measure 2 A/T eclipse
+#136/a II.2 measure 3 T/B eclipse
+#136/a III. measure 2 S/A, T/B eclipse?
+#136/a III. measure 3 T/B eclipse?
+#136/a IV.1 measure 3 S/A eclipse?
+#136/a IV.4 measure 2 T/B eclipse?
+#137 B.c measure 2 T/B eclipse
+#137 C.b measure 1 T/B eclipse
+#137 C.c measure 3 A/T eclipse?
+#137 D.3 measure 1 S/A eclipse
+#137 E.3 measure 3, 5 T/B eclipse
+#140/A 1. measure 3, 7 T/B eclipse
+#140/A 2. measure 2, 4 T/B eclipse
+#140/A 5. measure 3 T/B eclipse
+#140/A 7. measure 1 A/T eclipse
+#140/A 7. measure 4 T/B eclipse
+#141/a measure 2, 4 A/T eclipse
+#141/a measure 3 T/B eclipse
+#141/a measure 17 A/T eclipse
+#141/a measure 18 T/B eclipse
+#141/a measure 20 A/T eclipse
+#156 II measure 1 T/B eclipse
+#158 g) measure 1 A/T eclipse
+#189 f) measure 1 A/T eclipse
+#189 p) measure 2 T/B eclipse
+#190 measure 4 A/T eclipse
+#229 measure 42, 44 T/B eclipse
+
+Formal time count were set with different approaches, mostly: 
+#001—099	Bar duration, actual/nominal
+#100—205	Time signature
+#206—210
+#211—273
+#274—347	Time signature
+
+Exceptions to file join: 
+#18	Notated in 2 versions
+#105—6	Pictures, not music
+#194	Printed in 3-staff, notated in piano 2-staff
+#234	
