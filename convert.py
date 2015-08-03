@@ -8,7 +8,7 @@ process = True
 
 mscoreexe="/Applications/MuseScore 2.app/Contents/MacOS/mscore"
 
-outfile = open("book2.html", 'w')
+outfile = open("book.html", 'w')
 
 outfile.write('<html>\n'
 '<head>\n'
