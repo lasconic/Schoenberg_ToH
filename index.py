@@ -9,7 +9,7 @@ outfile.write('<html>\n'
 
 outfile.write('<ul>\n')
 for i in range(1, 348):
-    outfile.write('     <li><a class="link" href="/book.html#ex' + str(i) + '">Example ' + str(i) +'</a></li>\n')
+    outfile.write('     <li><a class="link" href="book.html#ex' + str(i) + '">Example ' + str(i) +'</a></li>\n')
 outfile.write('</ul>\n')
 
 outfile.write('</body>\n'
